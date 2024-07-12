@@ -23,7 +23,6 @@ let guesses = 0;
 function numberPlayer2() {
     let inputNumber = document.getElementById("guessNumber");
     givenNumber = parseInt(inputNumber.value);
-    console.log("givenNumber :", givenNumber, typeof givenNumber);
     if (isNaN(givenNumber)) {
         alert("Player 2, this is not a number, please try again.");
         return givenNumber;
@@ -43,7 +42,6 @@ console.log("givenNumber :", givenNumber, typeof givenNumber);
 function didIWin(guessingNumber, numberToGuess) {
     guesses += 1;
     if (guessingNumber == numberToGuess) {
-        //alert("Congratulations player 2, you guessed the number !");
         return true;
     } else if (guessingNumber > numberToGuess) {
         alert("Lower !");
