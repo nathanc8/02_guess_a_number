@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Guess the number !</h1>
+    <div id="global">
+        <div id="guessMyNumber" class="visible">    
+            <label for="giveNumber">Player 1, give player 2 a number to guess !</label>
+            <button id = "giveNumber" onclick="numberPlayer1()">START</button>
+            <form>
+                <label for="guessNumber">Player 2, please guess the number :</label>
+                <p> 
+                    <span id="infBorn">0</span> < <input id="guessNumber"> < <span id=supBorn>50</span>
+                    <button onclick="gamePlay4(event)">Guess</button>
+                </p>
+            </form>
+        </div>
+        <div id="guesses" class="visible">
+        </div>
+        <div id="congratulations" class="invisible">
+            <h2>Congratulations Player 2, you guessed the number !</h2>
+        </div>
+        <script src = "script_perso.js"></script>
+    </div>
+</body>
+</html>

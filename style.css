@@ -1,0 +1,12 @@
+/*
+la classe est un attribut qu'on donne à un élément html
+le point ('.') permet de déclarer une classe que je nomme "visible"
+les accolades permettent ensuite de déclarer tous les attributs que je souhaite donner aux éléments auxquels je vais attribuer la classe.
+*/
+.visible {
+   display: block;
+}
+
+.invisible {
+   display: none;
+}
