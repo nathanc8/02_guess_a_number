@@ -3,9 +3,29 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Guess the number !</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <script src="script.js"></script>
+        <h1>Guess the number !</h1>
+        <div id="game">
+            <div id="guess_my_number" class="visible">    
+                <label for="give_number">Player 1, give player 2 a number to guess !</label>
+                <button id = "give_number" onclick="number_player1()">START</button>
+                <form>
+                    <label for="guess_number">Player 2, please guess the number :</label>
+                    <p> 
+                        <span id="infBorn">0</span> < <input id="guess_number"> < <span id=supBorn>50</span>
+                        <button onclick="gameplay(event)">Guess</button>
+                    </p>
+                </form>
+            </div>
+            <div id="guesses" class="visible">
+            </div>
+        </div>
+        <div id="congratulations" class="invisible">
+            <h2>Congratulations Player 2, you guessed the number !</h2>
+        </div>
+            <script src = "script.js"></script>
     </body>
 </html>
